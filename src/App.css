@@ -1,20 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-image: radial-gradient(circle at center center, #733c8e, #090051), repeating-radial-gradient(circle at center center, #733c8e, #245c0f, 46px, transparent 92px, transparent 46px);
+  background-blend-mode: multiply;
+  background-color: #090051;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,12 +26,88 @@
 .App-link {
   color: #61dafb;
 }
+.Movie-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+  color: whitesmoke;
+  background-color: rgb(116, 110, 191);
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Movie-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Movie-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin : 0.5em;
+  background-color: rgb(93, 91, 122);
+  color:whitesmoke;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border : 7px solid rgb(255, 255, 255);
+}
+
+.Movie-input{
+  width: 50%; 
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 50px 0;
+  padding:20px;
+}
+
+.Movie-detail{
+  height: 10rem;
+  width: 100%;
+  border-top : 1px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Movie-date{
+  font-size:40px;
+}
+
+.Movie-rate{
+  font-size: 30px;
+  color: rgb(255, 175, 2);
+}
+
+
+footer{
+  background-color: #ffffff;
+  margin-top: 2em;
+  color: rgb(93, 91, 122);
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+h3{
+  font-size: 1em;;
+  margin: 1em;
 }
